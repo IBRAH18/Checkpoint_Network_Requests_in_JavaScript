@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Météo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="app-container">
+
+        <div class="start-container">
+            <div class="app-start">
+                <h1>Weather App</h1>
+                <button>Commencez !</button>
+            </div>
+        </div>
+
+        <div class="search-box">
+            <i class='bx bxs-map'></i>
+            <input id="text" type="text" placeholder="Entrez une région">
+            <button class='bx bx-search'></button>
+        </div>
+
+        <div class="city">
+            <p>Abidjan</p>
+        </div>
+
+        <div class="weather-box">
+            <div class="box">
+                <div class="weather-info">
+                    <div class="weather">
+                        <img src="images/cloud.png" alt="">
+                        <p class="temperature">0<span>°C</span></p>
+                        <p class="description">Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="bx bx-water"></i>
+                <div class="text-value">
+                    <div class="humidity-info">
+                        <span>0 %</span>
+                    </div>
+                    <p>Humidité</p>
+                </div>
+            </div>
+
+            <div class="wind">
+                <i class="bx bx-wind"></i>
+                <div class="text-value">
+                    <div class="wind-info">
+                        <span>0 m/s</span>
+                    </div>
+                    <p>Vitesse du vent</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="not-found">
+            <div class="not-found-box">
+                <img src="images/404.png" alt="">
+                <p>Oups ! La région est introuvable</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
